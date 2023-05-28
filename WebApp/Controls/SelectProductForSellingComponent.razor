@@ -1,0 +1,80 @@
+﻿
+<div class="form-group">
+    <lable for="category">Category</lable>
+        <select id="category" @bind="BoundID" class="form-control">
+        <option selected></option>
+        @foreach(var cat in _categories)
+        {
+            <option value="@cat.CategoryId">@cat.Name</option>
+        }
+    </select>
+</div>
+
+@if(_products != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Qty Left</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var product in _products)
+            {
+                <tr @onclick="@(() => OnSelectProduct(product))" style="cursor:pointer">
+                    <td>@product.Name</td>
+                    <td>@product.Quantity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code{
+    [Parameter]
+    public EventCallback<Product> OnProductSelected { get; set; }
+
+    [Inject]
+    IViewCategoriesUseCase _viewCategoriesUseCase { get; set; } = default!;
+
+    [Inject]
+    IViewProductByCategoryId _viewProductByCategoryId { get; set; } = default!;
+
+    private IEnumerable<Product> _products;
+    private IEnumerable<Category> _categories;
+
+    private int _boundID;
+    private int BoundID
+    {
+        get
+        {
+            return _boundID;
+        }
+        set
+        {
+            _boundID = value;
+            _products = _viewProductByCategoryId.GetProductByCategoryId(value);
+            StateHasChanged();
+        }
+    }
+}
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _categories = _viewCategoriesUseCase.Execute();
+    }
+
+    private void OnSelect(ChangeEventArgs e)
+    {
+        int a = int.Parse(e.Value.ToString());
+        int b = a;
+    }
+
+    private void OnSelectProduct(Product product)
+    {
+        OnProductSelected.InvokeAsync(product);
+    }
+}

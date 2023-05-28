@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "CoreBusniess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CoreBusniess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CoreBusniess.dll": {}
+        }
+      },
+      "UsesCases/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CoreBusniess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UsesCases.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UsesCases.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CoreBusniess/1.0.0": {
+      "type": "project",
+      "path": "../CoreBusniess/CoreBusniess.csproj",
+      "msbuildProject": "../CoreBusniess/CoreBusniess.csproj"
+    },
+    "UsesCases/1.0.0": {
+      "type": "project",
+      "path": "../UsesCases/UsesCases.csproj",
+      "msbuildProject": "../UsesCases/UsesCases.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "UsesCases >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\htadmin\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\htadmin\\source\\repos\\SupermarketManagement\\Plugins.DataStore.InMemory\\Plugins.DataStore.InMemory.csproj",
+      "projectName": "Plugins.DataStore.InMemory",
+      "projectPath": "C:\\Users\\htadmin\\source\\repos\\SupermarketManagement\\Plugins.DataStore.InMemory\\Plugins.DataStore.InMemory.csproj",
+      "packagesPath": "C:\\Users\\htadmin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\htadmin\\source\\repos\\SupermarketManagement\\Plugins.DataStore.InMemory\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\htadmin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\htadmin\\source\\repos\\SupermarketManagement\\UsesCases\\UsesCases.csproj": {
+              "projectPath": "C:\\Users\\htadmin\\source\\repos\\SupermarketManagement\\UsesCases\\UsesCases.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

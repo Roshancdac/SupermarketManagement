@@ -1,0 +1,17 @@
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\bin\Debug\net6.0\Plugins.DataStore.InMemory.deps.json
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\bin\Debug\net6.0\Plugins.DataStore.InMemory.dll
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\bin\Debug\net6.0\Plugins.DataStore.InMemory.pdb
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\bin\Debug\net6.0\CoreBusniess.dll
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\bin\Debug\net6.0\UsesCases.dll
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\bin\Debug\net6.0\UsesCases.pdb
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\bin\Debug\net6.0\CoreBusniess.pdb
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\obj\Debug\net6.0\Plugins.DataStore.InMemory.csproj.AssemblyReference.cache
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\obj\Debug\net6.0\Plugins.DataStore.InMemory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\obj\Debug\net6.0\Plugins.DataStore.InMemory.AssemblyInfoInputs.cache
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\obj\Debug\net6.0\Plugins.DataStore.InMemory.AssemblyInfo.cs
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\obj\Debug\net6.0\Plugins.DataStore.InMemory.csproj.CoreCompileInputs.cache
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\obj\Debug\net6.0\Plugins.DataStore.InMemory.csproj.CopyComplete
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\obj\Debug\net6.0\Plugins.DataStore.InMemory.dll
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\obj\Debug\net6.0\refint\Plugins.DataStore.InMemory.dll
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\obj\Debug\net6.0\Plugins.DataStore.InMemory.pdb
+C:\Users\htadmin\source\repos\SupermarketManagement\Plugins.DataStore.InMemory\obj\Debug\net6.0\ref\Plugins.DataStore.InMemory.dll

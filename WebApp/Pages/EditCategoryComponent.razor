@@ -1,0 +1,70 @@
+﻿@page "/editcategory/{id}"
+<h3>Edit Category</h3>
+
+@if (_category != null)
+{
+    <EditForm Model="_category" OnValidSubmit="OnValidSumit">
+        <DataAnnotationsValidator></DataAnnotationsValidator>
+        <ValidationSummary></ValidationSummary>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <InputText id="name" @bind-Value="_category.Name" class="form-control"></InputText>
+        </div>
+        <br />
+        <div class="form-group">
+            <label for="discription">Description</label>
+            <InputText id="discription" @bind-Value="_category.Description" class="form-control"></InputText>
+        </div>
+        <br />
+        <div>
+            <span>
+                <button type="submit" class="btn btn-primary">Save</button> &ensp;
+                <button type="submit" class="btn btn-primary" @onclick="OnCancle">Cancle</button>
+            </span>
+        </div>
+    </EditForm>
+}
+
+
+
+@code {
+    [Parameter]
+    public string id { get; set; } = default!;
+
+    [Inject]
+    private NavigationManager _navigationManager { get; set; } = default!;
+
+    [Inject]
+    private IEditCategoryUseCase _editCategoryUseCase { get; set; } = default!;
+
+    [Inject]
+    private IGetCategoryByIdUseCase _getCategoryByIdUseCase { get; set; } = default!;
+
+    private Category _category = default!;
+}
+
+@code {
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        if (int.TryParse(id, out int Id))
+           _category = _getCategoryByIdUseCase.Execute(Id);
+    }
+
+    private void OnValidSumit()
+    {
+        _editCategoryUseCase.Execute(_category);
+        _navigationManager.NavigateTo("/categorys");
+    }
+
+    private void OnCancle()
+    {
+        _navigationManager.NavigateTo("/categorys");
+    }
+}

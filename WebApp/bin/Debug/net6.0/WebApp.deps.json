@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WebApp/1.0.0": {
+        "dependencies": {
+          "CoreBusniess": "1.0.0",
+          "Plugins.DataStore.InMemory": "1.0.0",
+          "UsesCases": "1.0.0"
+        },
+        "runtime": {
+          "WebApp.dll": {}
+        }
+      },
+      "CoreBusniess/1.0.0": {
+        "runtime": {
+          "CoreBusniess.dll": {}
+        }
+      },
+      "Plugins.DataStore.InMemory/1.0.0": {
+        "dependencies": {
+          "UsesCases": "1.0.0"
+        },
+        "runtime": {
+          "Plugins.DataStore.InMemory.dll": {}
+        }
+      },
+      "UsesCases/1.0.0": {
+        "dependencies": {
+          "CoreBusniess": "1.0.0"
+        },
+        "runtime": {
+          "UsesCases.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CoreBusniess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Plugins.DataStore.InMemory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UsesCases/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

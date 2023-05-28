@@ -1,0 +1,12 @@
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\bin\Debug\net6.0\CoreBusniess.deps.json
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\bin\Debug\net6.0\CoreBusniess.dll
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\bin\Debug\net6.0\CoreBusniess.pdb
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\obj\Debug\net6.0\CoreBusniess.csproj.AssemblyReference.cache
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\obj\Debug\net6.0\CoreBusniess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\obj\Debug\net6.0\CoreBusniess.AssemblyInfoInputs.cache
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\obj\Debug\net6.0\CoreBusniess.AssemblyInfo.cs
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\obj\Debug\net6.0\CoreBusniess.csproj.CoreCompileInputs.cache
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\obj\Debug\net6.0\CoreBusniess.dll
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\obj\Debug\net6.0\refint\CoreBusniess.dll
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\obj\Debug\net6.0\CoreBusniess.pdb
+C:\Users\htadmin\source\repos\SupermarketManagement\CoreBusniess\obj\Debug\net6.0\ref\CoreBusniess.dll

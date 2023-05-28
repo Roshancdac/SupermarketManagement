@@ -1,0 +1,75 @@
+﻿@page "/products"
+<h3>Products</h3>
+<br/>
+@if(_listProducts != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Category</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Edit</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var product in _listProducts)
+            {
+            <tr>
+                <td>@_getCategoryByIdUseCase.Execute(product.CategoryId).Name</td>
+                <td>@product.Name</td>
+                <td>@(Math.Round(product.Price,2))</td>
+                <td>@product.Quantity</td>
+                <td><button type="button" @onclick="() => EditProduct(product.ProductId)">Edit Product</button></td>
+                <td><button type="button" @onclick="() => RemoveProduct(product.ProductId)">Remove Product</button></td>
+            </tr>
+            }
+        </tbody>
+        <br/>
+        <button type="button" @onclick="AddProduct">Add Product</button>
+    </table>
+}
+
+
+
+@code{
+    [Inject]
+    private IViewProductsUseCase _viewProductsUseCase { get; set; } = default!;
+
+    [Inject]
+    private IGetCategoryByIdUseCase _getCategoryByIdUseCase { get; set; } = default!;
+
+    [Inject]
+    private IRemoveProductUseCase _removeProductUseCase { get; set; } = default!;
+    [Inject]
+    private NavigationManager _navigationManager { get; set; } = default!;
+
+    private IEnumerable<Product> _listProducts { get; set; } = default!;
+
+}
+@code {
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _listProducts = _viewProductsUseCase.Execute();
+    }
+
+    private void AddProduct()
+    {
+        _navigationManager.NavigateTo("/addproduct");
+    }
+
+    private void EditProduct(int id)
+    {
+        _navigationManager.NavigateTo($"/editproduct/{id}");
+    }
+
+    private void RemoveProduct(int id)
+    {
+        _removeProductUseCase.Execute(id);
+        _listProducts = _viewProductsUseCase.Execute();
+    }
+}
